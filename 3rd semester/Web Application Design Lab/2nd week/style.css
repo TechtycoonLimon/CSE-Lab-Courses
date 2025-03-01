@@ -1,0 +1,31 @@
+body{
+    background-image: url(images/download.jpg);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: center;
+}
+div{
+    
+    background-color: rgb(127, 13, 235);
+    height: 750px;
+    width: 600px;
+    margin-left: 50px;
+    border: 3px solid rgb(181, 145, 238);
+    background-size:400px ;
+    font-variant: normal;
+}
+h1{
+    color: rgb(26, 4, 68);
+   
+    text-align: center;
+    background-size: 100px;
+}
+h4{
+    color: rgb(228, 12, 120);
+   
+    text-align: center;
+    background-size: 100px;
+}
+img{
+    margin-left: 800px;
+}
