@@ -1,0 +1,223 @@
+/* Global Styles */
+:root {
+    --yellow: #ffd700;
+    --orange: #ffa500;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, var(--yellow), #fffacd);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 10;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .logo span {
+    color: var(--orange);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--orange);
+}
+
+/* Section Styles */
+section {
+    height: 100vh;
+    padding: 80px 20px 20px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Headings */
+h1, h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+h1 span, h2 span {
+    color: var(--orange);
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: var(--orange);
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+    background: var(--orange);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e69500;
+}
+
+/* Home Section */
+#home {
+    background: url('https://picsum.photos/1200/800?random=7') center/cover no-repeat;
+    position: relative;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+#home .content {
+    position: relative;
+    z-index: 1;
+}
+
+.search-bar {
+    margin: 20px 0;
+}
+
+.search-bar select, .search-bar input {
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.partner-logos {
+    margin-top: 20px;
+}
+
+.partner-logos span {
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.circular-images {
+    margin-top: 20px;
+}
+
+.circular {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+/* About and Services */
+.left-image {
+    float: left;
+    margin-right: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+/* Spaces */
+.right-image {
+    float: right;
+    margin-left: 20px;
+    max-width: 400px;
+}
+
+/* Events */
+.benefits {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.benefits div {
+    margin: 10px;
+    text-align: center;
+}
+
+.benefits span {
+    font-size: 24px;
+    display: block;
+}
+
+/* Contact */
+.footer-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.footer-grid ul {
+    list-style: none;
+}
+
+.footer-grid li {
+    margin: 5px 0;
+}
+
+.social span {
+    margin: 0 10px;
+    font-weight: bold;
+}
