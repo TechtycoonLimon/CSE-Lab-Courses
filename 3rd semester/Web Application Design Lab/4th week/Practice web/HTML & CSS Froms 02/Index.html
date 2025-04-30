@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning HTML</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form>
+        <label for="Username">Enter Username:</label>
+        <input type="text" id="Username" placeholder="Username" required>
+        <label for="Email">Enter email:</label>
+        <input type="email" id="Email" placeholder="Your email" required>
+        <label for="Password">Enter Password:</label>
+        <input type="password" id="Password" placeholder="Choose a password" required>
+
+        <p>Select your age:</p>
+        <input type="radio" id="age1" name="age" value="18-25">
+        <label for="age1">18-25</label>
+        <input type="radio" id="age2" name="age" value="26-35">
+        <label for="age2">26-35</label>
+        <input type="radio" id="age3" name="age" value="36+">
+        <label for="age3">36+</label>
+
+        <label for="Question">Security Question:</label>
+        <select name="Question" id="Question">
+            <option value="q1">Why are you Gay?</option>
+            <option value="q2">What's your gf number?</option>
+            <option value="q3">Gf ass smash or Bruh's jussy fat ass smash?</option>
+        </select>
+
+        <label for="Answer">Security Question Answer:</label>
+        <input type="text" name="Answer" id="Answer">
+        <label for="Bio">Enter your bio:</label>
+        <textarea name="Bio" id="Bio" cols="30" rows="10" placeholder="About you..."></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
